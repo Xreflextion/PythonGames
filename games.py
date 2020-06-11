@@ -14,8 +14,7 @@ def choose_game(args):
     elif args.game == 'cows_n_bulls':
         cows_n_bulls()
     elif args.game == 'ttt':
-        # main()
-        pass
+        main()
 
 
 if __name__ == "__main__":
