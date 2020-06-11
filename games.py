@@ -1,5 +1,6 @@
 import argparse
 from guess_the_number import guess_the_number
+from rock_paper_scissors import rock_paper_scissors
 
 def choose_game(args):
     if args.game == 'guess_num':
@@ -7,7 +8,7 @@ def choose_game(args):
     elif args.game == 'hangman':
         pass
     elif args.game == 'rps':
-        pass
+        rock_paper_scissors()
     elif args.game == 'cows_n_bulls':
         pass
     elif args.game == 'ttt':
