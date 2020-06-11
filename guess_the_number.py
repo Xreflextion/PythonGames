@@ -26,7 +26,7 @@ def update_high_score(num_of_guesses, difficulty):
         high_scores[difficulty] = num_of_guesses
         with open('high_scores.json', 'w') as f:
             json.dump(high_scores, f)
-        print(f'New high score for {difficulty} mode: {num_of_guesses}!')
+        print(f'New high score for {difficulty} mode: {num_of_guesses} ~ヾ(＾∇＾)!')
         return
     print(f'High score for {difficulty} mode: {num_of_guesses}.')
     return

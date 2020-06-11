@@ -11,8 +11,8 @@ def rock_paper_scissors():
     rps = ["rock", "paper", "scissors"]
     print("Let's play 'Rock, Paper, Scissors!'")
     scores = {'computer': 0, 'player': 0}
-    while True:
-        player_choice = input("Rock, paper, or scissors: ").lower()
+    player_choice = input("Rock, paper, or scissors: ").lower()
+    while player_choice != 'exit':
         computer = random.sample(rps, 1)[0]
         while player_choice not in rps:
             print("Invalid.")
@@ -26,7 +26,7 @@ def rock_paper_scissors():
         elif computer == player_choice:
             print ("It's a tie!")
         else: 
-            print ("Congratulations! You won!")
+            print ("Congratulations! You won (￣▽￣)ノ!")
             update_scores(scores, 'p')
         print(f"Here are the scores: Computer = {scores['computer']}, Player = {scores['player']}")
         print("Do you want to play again?")
@@ -34,5 +34,6 @@ def rock_paper_scissors():
         if yes_or_no == "yes":
             print("*******************************")
             print("New game!")
+            player_choice = input("Rock, paper, or scissors: ").lower()
         else:
             break
