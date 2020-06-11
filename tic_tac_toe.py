@@ -13,21 +13,21 @@ def keep_score(num, scores):
 
 def check_tic_tac_toe(check, num, scores):
     if check[0][0] == check[0][1] and check[0][1] == check[0][2] and check[0][0] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check[1][0] == check[1][1] and check[1][1] == check[1][2] and check[1][0] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check[2][0] == check[2][1] and check[2][1] == check[2][2] and check[2][0] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check[0][0] == check[1][0] and check[1][0] == check[2][0] and check[0][0] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check [0][1] == check[1][1] and check[1][1] == check[2][1] and check[0][1] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check [0][2] == check[1][2] and check[1][2] == check[2][2] and check[0][2] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check [0][0] == check[1][1] and check[1][1] == check[2][2] and check[0][0] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif check [0][2] == check[1][1] and check[1][1] == check[2][0] and check[1][1] != 0:
-        print(f'Player {num} is the winner!')
+        print(f'Player {num} is the winner! Ｏ(≧∇≦)Ｏ')
     elif 0 in check[0] or 0 in check[1] or 0 in check[2]:
         return False
     else:
@@ -71,7 +71,7 @@ def player_choice(player_num, game, board1, board2, symbol, scores):
         return True
     return player
 
-def main():
+def tic_tac_toe():
     scores = {1: 0, 2: 0}
     while True:
         game = [[0, 0, 0],
@@ -98,6 +98,4 @@ def main():
             if player2 == None or player2 == True:
                 print('Thanks for playing!')
                 return
-
-main()
 
