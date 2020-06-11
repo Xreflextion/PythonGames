@@ -49,7 +49,7 @@ def evaluate_guess(player_choice, number, num_of_guesses, difficulty):
     return
 
 def guess_the_number():
-    print("Let's play a guessing game! Type exit anytime to quit.")
+    print("Let's play a guessing game!")
     player_choice = None
     while player_choice != 'exit':
         difficulty = (input("Choose a difficulty (easy, medium, hard): "))

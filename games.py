@@ -2,6 +2,7 @@ import argparse
 from guess_the_number import guess_the_number
 from rock_paper_scissors import rock_paper_scissors
 from cows_n_bulls import cows_n_bulls
+from tic_tac_toe import main
 
 def choose_game(args):
     if args.game == 'guess_num':
@@ -13,6 +14,7 @@ def choose_game(args):
     elif args.game == 'cows_n_bulls':
         cows_n_bulls()
     elif args.game == 'ttt':
+        # main()
         pass
 
 

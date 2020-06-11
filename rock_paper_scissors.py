@@ -11,16 +11,16 @@ def rock_paper_scissors():
     rps = ["rock", "paper", "scissors"]
     print("Let's play 'Rock, Paper, Scissors!'")
     scores = {'computer': 0, 'player': 0}
-    player_choice = input("Rock, paper, or scissors: ").lower()
+    player_choice = input("Rock(R), paper(P), or scissors(S): ").lower()
     while player_choice != 'exit':
         computer = random.sample(rps, 1)[0]
         while player_choice not in rps:
             print("Invalid.")
             player_choice = input("Please try again: ")
         print("Computer picked this: " + computer)
-        if computer == "rock" and player_choice == "scissors" or \
-            computer == "scissors" and player_choice == "paper" or \
-            computer == "paper" and player_choice == "rock":
+        if computer == "rock" and (player_choice == "scissors" or player_choice == 's') or \
+            computer == "scissors" and (player_choice == "paper" or player_choice == 'p') or \
+            computer == "paper" and (player_choice == "rock" or player_choice == 'r'):
             print("Computer won!")
             update_scores(scores, 'c')
         elif computer == player_choice:
